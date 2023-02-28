@@ -1,5 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { solid, regular, brands, icon } from '@fortawesome/fontawesome-svg-core/import.macro'
 
 const App = () => {
   return (
@@ -13,8 +15,9 @@ const App = () => {
       <header className='grid grid-cols-12 gap-2 justify-between items-center'>
         <div className='col-span-2'>Reseration</div>
         <div className='col-span-8 mx-auto'>
-          <div className='flex border-teal-500  px-8 py-2 rounded  h-10'>
-            <div>search</div>
+          <div className='border-2 border-teal-700 px-4 py-2 rounded-3xl h-10'>
+            {/* <div>search</div> */}
+            <FontAwesomeIcon icon={solid('magnifying-glass')} />
           </div>
         </div>
         <div className='col-span-2'>
