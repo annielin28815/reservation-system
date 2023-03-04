@@ -1,3 +1,14 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+:root {
+  --main-black-900: #3e3d40;
+  --main-black-100: #87888a;
+  --main-pink-100: #f6d3da;
+  --main-skin-500: #a29078;
+  --main-skin-100: #c1b2ab;
+}
+
+.courgette {
+}
