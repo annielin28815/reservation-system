@@ -10,5 +10,9 @@
   --main-skin-100: #c1b2ab;
 }
 
-.courgette {
+.hidden-over-3-line {
+  display: -webkit-box;
+  -webkit-line-clamp: 3; 
+  -webkit-box-orient: vertical;  
+  overflow: hidden;
 }
