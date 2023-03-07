@@ -10,6 +10,33 @@
   --main-skin-100: #c1b2ab;
 }
 
+/* NOTE: 首頁product  */
+.productSection{
+  overflow-x: overlay !important;
+}
+.productSection::-webkit-scrollbar {
+  height: 3px !important;
+}
+
+.productSection::-webkit-scrollbar-button {
+  background: transparent !important;
+  border-radius: 4px !important;
+}
+
+.productSection::-webkit-scrollbar-track-piece {
+  background: transparent !important;
+}
+
+.productSection::-webkit-scrollbar-thumb {
+  border-radius: 4px !important;
+  background-color: rgba(255, 255, 255, .3) !important;
+  border: 1px solid transparent !important;
+}
+
+.productSection::-webkit-scrollbar-track {
+  box-shadow: transparent !important;
+}
+
 .hidden-over-3-line {
   display: -webkit-box;
   -webkit-line-clamp: 3; 

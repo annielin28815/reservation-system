@@ -66,7 +66,7 @@ const App = () => {
             })}
           </div>
           
-          <div class="my-3 grid grid-flow-col gap-x-6 justify-start items-center mx-auto place-items-stretch overflow-x-auto">
+          <div class="my-3 py-3 grid grid-flow-col gap-x-6 justify-start items-center mx-auto place-items-stretch overflow-x-auto productSection">
             <div class="col-span-3 w-80">
               <img src="https://images.unsplash.com/photo-1604999565976-8913ad2ddb7c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=320&h=160&q=80" />
             </div>
