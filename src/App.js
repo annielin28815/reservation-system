@@ -3,8 +3,15 @@ import './App.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { solid } from '@fortawesome/fontawesome-svg-core/import.macro';
 import HomePage from './pages/homePage';
+import { LocalizationProvider } from '@mui/x-date-pickers';
+import { StaticDateTimePicker } from '@mui/x-date-pickers/StaticDateTimePicker';
+import { AdapterDayjs } from '@mui/x-date-pickers/AdapterDayjs';
+
+import { format } from 'date-fns'
+import { useState } from 'react';
 
 const App = () => {
+  const {currentDate, setCurrentDate } = useState(format(new Date(), 'yyyy/MM/dd'));
 
   return (
     <div className='bg-gray-light h-screen'>
@@ -14,7 +21,9 @@ const App = () => {
             <div className='col-span-8 mx-auto'>
               <div className='border border-teal-700 px-4 py-2 rounded-3xl h-10 grid grid-flow-col auto-cols-max justify-between items-center divide-x divide-white'>
                 <div className='px-4'>預約項目</div>
-                <div className='px-4'>月份</div>
+                <LocalizationProvider dateAdapter={AdapterDayjs}>
+                  <StaticDateTimePicker orientation="landscape" />
+                </LocalizationProvider>
                 <div className='px-4'>人數</div>
                 <div className='px-4'><FontAwesomeIcon icon={solid('magnifying-glass')} color="#c1b2ab" /></div>
               </div>
