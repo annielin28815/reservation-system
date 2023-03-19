@@ -1,6 +1,8 @@
 module.exports = {
   content: [
     "./src/**/*.{js, jsx, ts, tsx}",
+    "./node_modules/tw-elements/dist/js/**/*.js",
+    "./node_modules/tailwind-datepicker-react/dist/**/*.js",
   ],
   theme: {
     extend: {
@@ -37,7 +39,7 @@ module.exports = {
       'brown': '#a29078'
     },
   },
-  plugins: ['macros'],
+  plugins: ['macros', require("tw-elements/dist/plugin")],
   "files.associations": {
     "*.css": "tailwindcss"
   },
