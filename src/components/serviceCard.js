@@ -7,7 +7,7 @@ const ServiceCard = (props) => {
 
   return <div className="rounded-lg shadow-lg overflow-hidden">
     <article className="bg-skin overflow-hidden rounded-lg shadow-lg max-h-full">
-      <div className="" >
+      <div>
         <img alt={title} className="object-cover h-72 w-96" src={pic} />
       </div>
       

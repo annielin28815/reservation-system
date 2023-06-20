@@ -8,7 +8,7 @@ import { format } from 'date-fns';
 import { useState } from 'react';
 
 const options = {
-	title: "Demo Title",
+	title: false,
 	autoHide: true,
 	todayBtn: false,
 	clearBtn: true,
@@ -27,8 +27,12 @@ const options = {
 	},
 	icons: {
 		// () => ReactElement | JSX.Element
-		prev: () => <span>Previous</span>,
-		next: () => <span>Next</span>,
+		prev: () => <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                  <path fill-rule="evenodd" d="M7.72 12.53a.75.75 0 010-1.06l7.5-7.5a.75.75 0 111.06 1.06L9.31 12l6.97 6.97a.75.75 0 11-1.06 1.06l-7.5-7.5z" clip-rule="evenodd" />
+                </svg>,
+		next: () => <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                  <path fill-rule="evenodd" d="M16.28 11.47a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 01-1.06-1.06L14.69 12 7.72 5.03a.75.75 0 011.06-1.06l7.5 7.5z" clip-rule="evenodd" />
+                </svg>,
 	},
 	datepickerClassNames: "top-12",
 	defaultDate: new Date("2022-01-01"),
@@ -36,14 +40,14 @@ const options = {
 }
 
 const App = () => {
-  const {currentDate, setCurrentDate } = useState(format(new Date(), 'yyyy/MM/dd'));
+  // const {currentDate, setCurrentDate } = useState(format(new Date(), 'yyyy/MM/dd'));
   const [show, setShow] = useState(false);
 
   const handleChange = (e) => {
 		console.log(e)
 	}
 	const handleClose = (bool) => {
-		setShow(bool)
+		setShow(bool);
 	}
 
   return (
