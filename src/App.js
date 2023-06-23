@@ -3,8 +3,8 @@ import './App.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { solid } from '@fortawesome/fontawesome-svg-core/import.macro';
 import HomePage from './pages/homePage';
+import LoginPage from './pages/loginPage';
 import Datepicker from "tailwind-datepicker-react";
-import { format } from 'date-fns';
 import { useState } from 'react';
 
 const options = {
@@ -51,8 +51,36 @@ const App = () => {
 	}
 
   return (
-    <div className='bg-gray-light h-screen'>
-        <header className='container mx-auto py-6'>
+    <div>
+      <div style={{display: 'flex', flexDirection: 'column'}}>
+        <div style={{display: 'flex', position: 'relative'}}>
+          <div style={{background: '#eee5e3', height: 'calc(100vh - 100px)', width: 'calc(100vw - 200px)'}}></div>
+          <div style={{background: '#395c87', borderRadius: '0 120px 0px 0', height: 'calc(100vh - 150px)', width: '200px', display: 'flex', flexDirection: 'column', alignItems: 'center', padding: '75px 0px'}}>
+            <div style={{marginBottom: '45px'}}><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="#eee5e3" style={{width: '90px'}}>
+              <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+            </svg>
+            </div>
+            <div style={{marginBottom: '45px'}}><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="#eee5e3" style={{width: '90px'}}>
+              <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z" />
+            </svg>
+            </div>
+            <div style={{marginBottom: '45px'}}><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="#eee5e3" style={{width: '90px'}}>
+              <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 10.5V6a3.75 3.75 0 10-7.5 0v4.5m11.356-1.993l1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 01-1.12-1.243l1.264-12A1.125 1.125 0 015.513 7.5h12.974c.576 0 1.059.435 1.119 1.007zM8.625 10.5a.375.375 0 11-.75 0 .375.375 0 01.75 0zm7.5 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z" />
+            </svg>
+            </div>
+            <div><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="#eee5e3" style={{width: '90px'}}>
+              <path strokeLinecap="round" strokeLinejoin="round" d="M9.879 7.519c1.171-1.025 3.071-1.025 4.242 0 1.172 1.025 1.172 2.687 0 3.712-.203.179-.43.326-.67.442-.745.361-1.45.999-1.45 1.827v.75M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-9 5.25h.008v.008H12v-.008z" />
+            </svg>
+            </div>
+          </div>
+        </div>
+        <div style={{background: '#395c87', borderRadius: '150px 0px 120px 0px', height: '250px', width: '100vw', position: 'absolute', bottom: '0px'}}></div>
+      </div>
+
+
+
+
+        {/* <header className='container mx-auto py-6'>
           <div className='grid grid-cols-12 gap-2 justify-be【tween items-center bg-gray-dark text-skin rounded-xl shadow p-4 '>
             <div className='col-span-2 tracking-widest text-2xl font-logo'>Save us</div>
             <div className='col-span-8 mx-auto'>
@@ -62,10 +90,6 @@ const App = () => {
 
                 <div className="relative max-w-sm">
                   <Datepicker options={options} onChange={(e) => handleChange(e)} show={show} setShow={(e) => handleClose(e)} />
-                  {/* <div className="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
-                    <svg aria-hidden="true" className="w-5 h-5 text-gray-500 dark:text-gray-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fillRule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clipRule="evenodd"></path></svg>
-                  </div>
-                  <input datepicker="true" datepicker-autohide="true" type="text" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full pl-10 p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Select date" /> */}
                 </div>
 
             </div>
@@ -86,11 +110,12 @@ const App = () => {
               </div>
             </div>
           </div>
-        </header>
+        </header> */}
 
         <BrowserRouter>
           <Routes>
             <Route exact path="/" element={<HomePage />}/>
+            <Route exact path="/login" element={<LoginPage />}/>
           </Routes>
         </BrowserRouter>
 

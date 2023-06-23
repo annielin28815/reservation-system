@@ -26,7 +26,10 @@ module.exports = {
       xl: '1440px',
     },
     colors: {
-      'blue': '#1fb6ff',
+      'blue': {
+        100: '#1fb6ff',
+        200: '#395c87'
+      },
       'purple': '#7e5bef',
       'orange': '#ff7849',
       'green': '#13ce66',
@@ -35,7 +38,7 @@ module.exports = {
       'gray-dark': '#3e3d40',
       'gray': '#8492a6',
       'gray-light': '#87888a',
-      'skin': '#c1b2ab',
+      'skin': '#f4ede4',
       'brown': '#a29078'
     },
   },
