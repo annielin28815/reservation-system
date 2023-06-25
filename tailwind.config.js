@@ -28,15 +28,22 @@ module.exports = {
     colors: {
       'blue': {
         100: '#1fb6ff',
-        200: '#395c87'
+        200: '#395c87',
+        300: '#8492a6',
       },
       'purple': '#7e5bef',
       'orange': '#ff7849',
-      'green': '#13ce66',
+      'green': {
+        100: '#13ce66',
+        200: '#668f75'
+      },
       'yellow': '#ffc82c',
       'pink': '#f6d3da',
       'gray-dark': '#3e3d40',
-      'gray': '#8492a6',
+      'gray': {
+        700: '#7d7d7d',
+        800: '#444444'
+      },
       'gray-light': '#87888a',
       'skin': '#f4ede4',
       'brown': '#a29078'

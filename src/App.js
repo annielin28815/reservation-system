@@ -52,33 +52,41 @@ const App = () => {
 
   return (
     <div>
-      <div style={{display: 'flex', flexDirection: 'column'}}>
-        <div style={{display: 'flex', position: 'relative'}}>
-          <div style={{background: '#eee5e3', height: 'calc(100vh - 100px)', width: 'calc(100vw - 200px)'}}></div>
-          <div style={{background: '#395c87', borderRadius: '0 120px 0px 0', height: 'calc(100vh - 150px)', width: '200px', display: 'flex', flexDirection: 'column', alignItems: 'center', padding: '75px 0px'}}>
-            <div style={{marginBottom: '45px'}}><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="#eee5e3" style={{width: '90px'}}>
-              <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
-            </svg>
-            </div>
-            <div style={{marginBottom: '45px'}}><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="#eee5e3" style={{width: '90px'}}>
-              <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z" />
-            </svg>
-            </div>
-            <div style={{marginBottom: '45px'}}><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="#eee5e3" style={{width: '90px'}}>
-              <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 10.5V6a3.75 3.75 0 10-7.5 0v4.5m11.356-1.993l1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 01-1.12-1.243l1.264-12A1.125 1.125 0 015.513 7.5h12.974c.576 0 1.059.435 1.119 1.007zM8.625 10.5a.375.375 0 11-.75 0 .375.375 0 01.75 0zm7.5 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z" />
-            </svg>
-            </div>
-            <div><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="#eee5e3" style={{width: '90px'}}>
-              <path strokeLinecap="round" strokeLinejoin="round" d="M9.879 7.519c1.171-1.025 3.071-1.025 4.242 0 1.172 1.025 1.172 2.687 0 3.712-.203.179-.43.326-.67.442-.745.361-1.45.999-1.45 1.827v.75M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-9 5.25h.008v.008H12v-.008z" />
-            </svg>
+      <div className='flex flex-col'>
+        <div className='flex flex-row relative'>
+          <div className='menu-bar-list'>
+            <div className='font-bold slogan'>Start from zero.</div>
+            <ul>
+              <li>
+                <p className='font-semibold text-gray-800 text-5xl'>個人帳戶</p>
+                <p className='text-4xl text-gray-700'>Personal account</p>
+              </li>
+              <li>
+                <p className='font-semibold text-gray-800 text-5xl'>收藏項目</p>
+                <p className='text-4xl text-gray-700'>Favorites</p>
+              </li>
+              <li>
+                <p className='font-semibold text-gray-800 text-5xl'>訂單一覽</p>
+                <p className='text-4xl text-gray-700'>Order List</p>
+              </li>
+              <li>
+                <p className='font-semibold text-gray-800 text-5xl'>使用方式</p>
+                <p className='text-4xl text-gray-700'>How to use</p>
+              </li>
+            </ul>
+          </div>
+          <div style={{background: '#0073B4', borderRadius: '0 120px 0px 0', height: 'calc(100vh - 150px)', width: '200px', display: 'flex', flexDirection: 'column', alignItems: 'center', padding: '75px 0px'}}>
+            <div style={{marginBottom: '45px', background: '#FF6853', borderRadius: '50%',}}>
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="#eee5e3" style={{width: '90px', padding: '10px',}}><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" /></svg>
             </div>
           </div>
         </div>
-        <div style={{background: '#395c87', borderRadius: '150px 0px 120px 0px', height: '250px', width: '100vw', position: 'absolute', bottom: '0px'}}></div>
+        <div className='w-screen absolute bottom-0' style={{background: '#0073B4', borderRadius: '150px 0px 120px 0px', height: '250px'}}>
+          <div className='mx-auto max-w-7xl px-4 py-6 sm:px-6 lg:px-8 menu-bg'>
+            <p className='text-center'>Reserve</p>
+          </div>
+        </div>
       </div>
-
-
-
 
         {/* <header className='container mx-auto py-6'>
           <div className='grid grid-cols-12 gap-2 justify-be【tween items-center bg-gray-dark text-skin rounded-xl shadow p-4 '>

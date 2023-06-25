@@ -36,3 +36,40 @@
     transform: rotate(360deg);
   }
 }
+.menu-bar-list {
+  background: #eee5e3; 
+  height: calc(100vh - 100px); 
+  width: calc(100vw - 200px); 
+  padding: 75px 52px;
+}
+.menu-bar-list>.slogan {
+  font-size: 100px;
+  line-height: 110px;
+  color: #444;
+}
+.menu-bar-list>ul {
+  list-style: none;
+}
+.menu-bar-list>ul>li {
+  margin: 60px;
+}
+.menu-bg {
+  height: 200px;
+  position: relative;
+}
+.menu-bg p{
+  font-family: fantasy;
+  font-size: 130px;
+  position: absolute;
+  top: 178px;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  letter-spacing: 0.2em;
+  text-align: center;
+  color: #EE4A3B;
+  text-shadow: 5px 5px 0px #F5B393, 
+    10px 10px 0px #FFDFDE;
+  position: absolute; 
+  top: -30px; 
+  right: -30px;
+}
