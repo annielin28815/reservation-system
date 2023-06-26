@@ -52,26 +52,26 @@ const App = () => {
 
   return (
     <div>
-      <div className='flex flex-col'>
+      <div className='flex flex-col' style={{display: 'none'}}>
         <div className='flex flex-row relative'>
           <div className='menu-bar-list'>
             <div className='font-bold slogan'>Start from zero.</div>
             <ul>
               <li>
-                <p className='font-semibold text-gray-800 text-5xl'>個人帳戶</p>
-                <p className='text-4xl text-gray-700'>Personal account</p>
+                <p className='text-5xl font-semibold text-gray-800'>個人帳戶</p>
+                <p className='text-4xl text-gray-700 mt-4'>Personal account</p>
               </li>
               <li>
-                <p className='font-semibold text-gray-800 text-5xl'>收藏項目</p>
-                <p className='text-4xl text-gray-700'>Favorites</p>
+                <p className='text-5xl font-semibold text-gray-800'>收藏項目</p>
+                <p className='text-4xl text-gray-700 mt-4'>Favorites</p>
               </li>
               <li>
-                <p className='font-semibold text-gray-800 text-5xl'>訂單一覽</p>
-                <p className='text-4xl text-gray-700'>Order List</p>
+                <p className='text-5xl font-semibold text-gray-800'>訂單一覽</p>
+                <p className='text-4xl text-gray-700 mt-4'>Order List</p>
               </li>
               <li>
-                <p className='font-semibold text-gray-800 text-5xl'>使用方式</p>
-                <p className='text-4xl text-gray-700'>How to use</p>
+                <p className='text-5xl font-semibold text-gray-800'>使用方式</p>
+                <p className='text-4xl text-gray-700 mt-4'>How to use</p>
               </li>
             </ul>
           </div>
