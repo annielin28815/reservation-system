@@ -14,14 +14,14 @@ const ServiceCard = (props) => {
       </div>
       <div className="rounded-lg shadow-lg bg-skin relative" style={{ padding: '40px 20px 40px 100px', margin: '50px 0px 0px 80px'}}>
         <header className="leading-tight mb-2">
-          <h4 className="text-lg font-bold">
+          <h4 className="sm:text-3xl md:text-2xl lg:text-xl xl:text-lg font-bold">
             <a className="no-underline hover:underline text-black" href="#">
               {title}
             </a>
           </h4>
         </header>
 
-        <p className="hidden-over-3-line">{des}</p>
+        <p className="hidden-over-3-line sm:text-2xl md:text-xl lg:text-base">{des}</p>
       </div>
     </article>
   </div>

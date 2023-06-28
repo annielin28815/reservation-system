@@ -52,36 +52,36 @@ const App = () => {
 
   return (
     <div>
-      <div className='flex flex-col' style={{display: 'none'}}>
+      <div className='flex flex-col'>
         <div className='flex flex-row relative'>
           <div className='menu-bar-list'>
             <div className='font-bold slogan'>Start from zero.</div>
             <ul>
               <li>
-                <p className='text-5xl font-semibold text-gray-800'>個人帳戶</p>
-                <p className='text-4xl text-gray-700 mt-4'>Personal account</p>
+                <p className='text-lg font-semibold text-gray-800'>個人帳戶</p>
+                <p className='text-base text-gray-700 mt-4'>Personal account</p>
               </li>
               <li>
-                <p className='text-5xl font-semibold text-gray-800'>收藏項目</p>
-                <p className='text-4xl text-gray-700 mt-4'>Favorites</p>
+                <p className='text-lg font-semibold text-gray-800'>收藏項目</p>
+                <p className='text-base text-gray-700 mt-4'>Favorites</p>
               </li>
               <li>
-                <p className='text-5xl font-semibold text-gray-800'>訂單一覽</p>
-                <p className='text-4xl text-gray-700 mt-4'>Order List</p>
+                <p className='text-lg font-semibold text-gray-800'>訂單一覽</p>
+                <p className='text-base text-gray-700 mt-4'>Order List</p>
               </li>
               <li>
-                <p className='text-5xl font-semibold text-gray-800'>使用方式</p>
-                <p className='text-4xl text-gray-700 mt-4'>How to use</p>
+                <p className='text-lg font-semibold text-gray-800'>使用方式</p>
+                <p className='text-base text-gray-700 mt-4'>How to use</p>
               </li>
             </ul>
           </div>
-          <div style={{background: '#0073B4', borderRadius: '0 120px 0px 0', height: 'calc(100vh - 150px)', width: '200px', display: 'flex', flexDirection: 'column', alignItems: 'center', padding: '75px 0px'}}>
-            <div style={{marginBottom: '45px', background: '#FF6853', borderRadius: '50%',}}>
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="#eee5e3" style={{width: '90px', padding: '10px',}}><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" /></svg>
+          <div style={{background: '#0073B4', borderRadius: '0 120px 0px 0', height: 'calc(100vh - 2.5em)', width: '50px', display: 'flex', flexDirection: 'column', alignItems: 'center', padding: '1.5em'}}>
+            <div style={{marginBottom: '45px', background: '#FF6853', borderRadius: '50%',  }}>
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="#eee5e3" style={{width: '90px', padding: '10px',}}><path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" /></svg>
             </div>
           </div>
         </div>
-        <div className='w-screen absolute bottom-0' style={{background: '#0073B4', borderRadius: '150px 0px 120px 0px', height: '250px'}}>
+        <div className='w-screen absolute bottom-0' style={{background: '#0073B4', borderRadius: '150px 0px 120px 0px', height: '2.5em', width: '320px'}}>
           <div className='mx-auto max-w-7xl px-4 py-6 sm:px-6 lg:px-8 menu-bg'>
             <p className='text-center'>Reserve</p>
           </div>

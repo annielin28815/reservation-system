@@ -37,21 +37,20 @@
   }
 }
 .menu-bar-list {
-  background: #eee5e3; 
-  height: calc(100vh - 100px); 
-  width: calc(100vw - 200px); 
-  padding: 75px 52px;
+  background: #eee5e3;
+  height: calc(100vh - 2.5em);
+  padding: 1.5em;
+  width: 270px;
 }
 .menu-bar-list>.slogan {
-  font-size: 100px;
-  line-height: 110px;
+  font-size: 2.441rem;
   color: #444;
 }
 .menu-bar-list>ul {
   list-style: none;
 }
 .menu-bar-list>ul>li {
-  margin: 60px;
+  margin: 2.5rem;
 }
 .menu-bg {
   height: 200px;
@@ -59,10 +58,7 @@
 }
 .menu-bg p{
   font-family: fantasy;
-  font-size: 130px;
-  position: absolute;
-  top: 178px;
-  left: 50%;
+  font-size: 3rem;
   transform: translate(-50%,-50%);
   letter-spacing: 0.2em;
   text-align: center;
@@ -70,6 +66,6 @@
   text-shadow: 5px 5px 0px #F5B393, 
     10px 10px 0px #FFDFDE;
   position: absolute; 
-  top: -30px; 
-  right: -30px;
+  top: 0px; 
+  left: 180px;
 }
