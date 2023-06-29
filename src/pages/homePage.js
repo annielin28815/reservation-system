@@ -54,8 +54,9 @@ const HomePage = (props) => {
     },
   ];
 
-  return <main className='container mx-auto py-3'>
-    <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 justify-center items-center mx-auto ">
+  return <main className='container mx-auto py-5'>
+
+    <div className="grid grid-cols-1 md:grid-cols-1 xl:grid-cols-2 gap-8 justify-center items-center mx-auto ">
       {serviceList.map((item, index) => {
         return <ServiceCard key={item.id} title={item.title} pic={item.pic} des={item.des}/>
       })}
