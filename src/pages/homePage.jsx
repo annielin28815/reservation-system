@@ -1,7 +1,6 @@
 import React from "react";
 import '../index.css';
 import ServiceCard from '../components/serviceCard';
-import ProductCard from '../components/productCard';
 
 const HomePage = (props) => {
   const serviceList = [

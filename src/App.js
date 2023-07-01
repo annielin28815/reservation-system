@@ -109,7 +109,7 @@ const App = () => {
                 </div>
               </div>
               <div className='px-4'>人數</div>
-              <div className='px-4'><FontAwesomeIcon icon={solid('magnifying-glass')} color="#c1b2ab" /></div>
+              <div className='px-4'><FontAwesomeIcon icon={solid('magnifying-glass')} color="#f4ede4" /></div>
             </div>
           </div>
           <div className='col-span-2'>
