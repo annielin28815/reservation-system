@@ -104,7 +104,10 @@ const App = () => {
             <div className='border border-teal-700 px-4 py-2 rounded-3xl h-30 grid grid-flow-col auto-cols-max justify-between items-center'>
               <div className='px-4'>預約項目</div>
               <div className="flex items-center justify-center" onClick={chooseDate}>日期
-                <div className="relative max-w-sm" style={{display: datepickerShow ? 'block' : 'none'}}>
+                <div 
+                  className="relative max-w-sm" 
+                  // style={{display: datepickerShow ? 'block' : 'none'}}
+                >
                   <Datepicker options={options} onChange={(e) => handleChange(e)} show={show} setShow={(e) => handleClose(e)} />
                 </div>
               </div>
